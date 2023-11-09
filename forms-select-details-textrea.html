@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <p><label for="iestado">Profissão: </label>
+        <select id="iestado">
+            <option value=" ">-----Escolha-----</option>
+            <optgroup label="Profissões">
+                <option value="Adm">Administrador</option>
+                <option value="Eng"> Engenheiro</option>
+                <option value="Dr"> Doutor</option>
+                <option value="PSC">Pscologa</option>
+            </optgroup>
+        </p>
+        <br><p>
+            <label for="iestado"> Estado </label>
+            <input type="text" id="iestado" list="i1estado">
+            <datalist id="i1estado">
+                <option value="CE"></option>
+                <option value="PB"></option>
+                <option value="PI"></option>
+                <option value="Bahia"></option>
+            </datalist>
+         </p>
+         <p><label for="imsg"> Mensagem <br></label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+
+        </p>
+
+        <p>
+            <input type="submit">
+            <input type="reset" >
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
